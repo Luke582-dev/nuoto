@@ -1,0 +1,276 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    color: #0056b3;
+    margin-top: 50px;
+}
+
+p {
+    font-size: 18px;
+    color: #333;
+}
+
+.navbar-brand {
+    color: #007bff !important;
+    font-weight: bold;
+  }
+
+.carousel-inner img {
+    border-radius: 10px;
+    height: 400px;
+}
+
+.btn-primary {
+    background-color: #28a745;
+    border: none;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 18px;
+}
+
+.btn-primary:hover {
+    background-color: #218838;
+}
+
+.navbar-brand {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.navbar {
+    margin-bottom: 10px;
+    border-bottom: 4px solid #0056b3; /* Linea più spessa e colorata */
+}
+
+/* Divisore principale */
+.border-bottom {
+    border-bottom: 4px solid #0056b3; /* Linea più spessa e colorata */
+    padding-bottom: 10px;
+}
+
+/* Miglioramento della sezione principale */
+h1, p, h3 {
+    padding-left: 15px;
+}
+
+/* Colore di sfondo leggero per separare visivamente le sezioni */
+.container {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombra leggera per effetto professionale */
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.carousel-item {
+    transition: transform 0.8s ease-in-out;
+}
+
+.icona {
+    height: 40px;
+    margin-left:20px;
+}
+
+/* Aggiungere stili per la nuova card */
+.card {
+    background-color: #f8f9fa;
+    border: 2px solid #0056b3;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.card h2 {
+    color: #0056b3;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 18px;
+    width: 260px;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+.button-container {
+    display: flex;               /* Abilita il layout flex */
+    justify-content: center;     /* Allinea gli elementi al centro orizzontalmente */
+    margin-top: 20px;           /* Distanza superiore, facoltativa */
+}
+
+
+
+.loader {
+    margin-left: 680px;
+    position: relative;
+    font-size: 40px;
+    width: 5.5em;
+    height: 5.5em;
+  }
+  
+  .loader:before {
+    content: '';
+    position: absolute;
+    transform: translate(-50%, -50%) rotate(45deg);
+    height: 100%;
+    width: 8px;
+    background: #000000;
+    border-radius: 18px;
+    left: 50%;
+    top: 50%;
+  }
+  
+  .loader:after {
+    content: '';
+    position: absolute;
+    left: 0.2em;
+    bottom: 0.18em;
+    width: 1em;
+    height: 1em;
+    background-color: orange;
+    border-radius: 15%;
+    animation: rollingRock 2.5s cubic-bezier(.79, 0, .47, .97) infinite;
+  }
+  
+  @keyframes rollingRock {
+    0% {
+      transform: translate(0, -1em) rotate(-45deg)
+    }
+  
+    5% {
+      transform: translate(0, -1em) rotate(-50deg)
+    }
+  
+    20% {
+      transform: translate(1em, -2em) rotate(47deg)
+    }
+  
+    25% {
+      transform: translate(1em, -2em) rotate(45deg)
+    }
+  
+    30% {
+      transform: translate(1em, -2em) rotate(40deg)
+    }
+  
+    45% {
+      transform: translate(2em, -3em) rotate(137deg)
+    }
+  
+    50% {
+      transform: translate(2em, -3em) rotate(135deg)
+    }
+  
+    55% {
+      transform: translate(2em, -3em) rotate(130deg)
+    }
+  
+    70% {
+      transform: translate(3em, -4em) rotate(217deg)
+    }
+  
+    75% {
+      transform: translate(3em, -4em) rotate(220deg)
+    }
+  
+    100% {
+      transform: translate(0, -1em) rotate(-225deg)
+    }
+  }
+        
+
+
+  
+  .rating {
+    cursor: pointer;
+    max-width: 300px; /* Imposta una larghezza massima */
+    margin: 0 auto; /* Centra l'elemento */
+    background-color: rgba(0, 0, 16, 0.8);
+    padding: 0.4rem 0.4rem 0.1rem 0.4rem;
+    border-radius: 2.2rem;
+}
+
+.rating-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Rimuovi eventuali larghezze non necessarie dagli SVG */
+.svg {
+    fill: rgb(242, 242, 242);
+    height: 3.6rem;
+    width: 3.6rem;
+    margin: 0.2rem;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+  .rating-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0.4rem 0.8rem;
+  }
+  
+  
+  .rating-form-2 svg {
+    height: 3rem;
+    width: 3rem;
+    margin: 0.5rem;
+  }
+  
+  #radios label {
+    position: relative;
+  }
+  
+  .super-happy, [type="radio"] {
+    position: absolute;
+    opacity: 0;
+  }
+  
+  .input ,[type="radio"] + svg {
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+  
+  .super-happy[class="super-happy"]:hover + svg,
+  .super-happy[class="super-happy"]:checked + svg,
+  .super-happy[class="super-happy"]:focus + svg {
+    fill: rgb(0, 204, 79);
+    transition: 1.5s;
+  }
+  
+  .neutral[class="neutral"]:hover + svg,
+  .neutral[class="neutral"]:checked + svg,
+  .neutral[class="neutral"]:focus + svg {
+    fill: rgb(232, 214, 0);
+    transition: 1.5s;
+  }
+  
+  .super-sad[class="super-sad"]:hover + svg,
+  .super-sad[class="super-sad"]:checked + svg,
+  .super-sad[class="super-sad"]:focus + svg {
+    fill: rgb(239, 42, 16);
+    transition: 1.5s;
+  }
+  
+  .valutazione{
+    text-align: center;
+
+  }
+
+  .prod{
+    margin-left: 10px;
+  }

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuoto Club - Tutti gli Stili</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/tutti.css">
+</head>
+<body>
+    <!-- Barra di navigazione (status bar) con divisore -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <a class="navbar-brand" href="./homepage.html">Nuoto Club</a>
+        <img src="../immagini/icona 1.png" class="icona">
+        <img src="../immagini/icona 2.png" class="icona">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./homepage.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="./tutti.html">Tutti gli Stili</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./scegli_stile.html">Scegli Stile</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div>
+        <a href="./homepage.html" class="btn btn-back">Indietro</a>
+        <h1 class="text-center">Tutti gli Stili di Nuoto</h1>
+    </div>
+    <!-- Barra di ricerca -->
+    <div class="container mt-5">
+        <div class="col-md-12">
+            <div class="input-group my-4">
+                <input type="text" class="form-control" id="searchInput" placeholder="Cerca uno stile..." onkeyup="filterStyles()">
+            </div>
+        </div>
+
+        <!-- Elenco degli stili -->
+        <div class="row" id="styleCards">
+            <!-- Flashcard per lo stile libero -->
+            <div class="col-md-4 mb-4">
+                <div class="card" onclick="window.location.href='./libero.html';">
+                    <img src="../immagini/libero.png" class="card-img-top" alt="Stile Libero">
+                    <div class="card-body">
+                        <h5 class="card-title">Stile Libero</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Flashcard per lo stile rana -->
+            <div class="col-md-4 mb-4">
+                <div class="card" onclick="window.location.href='./rana.html';">
+                    <img src="../immagini/rana.jpg" class="card-img-top" alt="Rana">
+                    <div class="card-body">
+                        <h5 class="card-title">Rana</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Flashcard per lo stile dorso -->
+            <div class="col-md-4 mb-4">
+                <div class="card" onclick="window.location.href='./dorso.html';">
+                    <img src="../immagini/dorso.jpg" class="card-img-top" alt="Dorso">
+                    <div class="card-body">
+                        <h5 class="card-title">Dorso</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Flashcard per lo stile farfalla -->
+            <div class="col-md-4 mb-4">
+                <div class="card" onclick="window.location.href='./farfalla.html';">
+                    <img src="../immagini/farfalla.jpg" class="card-img-top" alt="Farfalla">
+                    <div class="card-body">
+                        <h5 class="card-title">Farfalla / Delfino</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Aggiungi altre card per gli stili se necessario -->
+        </div>
+    </div>
+
+    <!-- Bootstrap JS e dipendenze -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Script per la barra di ricerca -->
+    <script>
+        function filterStyles() {
+            let input = document.getElementById('searchInput').value.toLowerCase();
+            let cards = document.getElementById('styleCards').getElementsByClassName('col-md-4');
+
+            for (let i = 0; i < cards.length; i++) {
+                let title = cards[i].getElementsByClassName('card-title')[0].textContent.toLowerCase();
+                if (title.includes(input)) {
+                    cards[i].style.display = "";
+                } else {
+                    cards[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+    <div style="height: 100px;"></div> <!-- Spazio vuoto aggiunto -->
+
+</body>
+</html>
+

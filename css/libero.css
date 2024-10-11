@@ -1,0 +1,51 @@
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    margin-top: 10px;
+    padding: 10px 20px;
+}
+
+.navbar-brand {
+    color: #007bff !important;
+    font-weight: bold;
+}
+
+.navbar {
+    margin-bottom: 10px;
+    border-bottom: 4px solid #0056b3; /* Linea più spessa e colorata */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #0056b3;
+    margin: 0; /* Rimuovi il margine */
+}
+
+p {
+    font-size: 18px;
+    color: #333;
+}
+
+.btn-back {
+    margin-top: 15px; /* Distanza dalla parte superiore */
+    margin-left: 30px; /* Distanza dal lato sinistro */
+    background-color: #000000; /* Colore di sfondo */
+    color: white; /* Colore del testo */
+    border: none; /* Rimuovi bordo */
+}
+
+/* Miglioramento della sezione principale */
+h1, p, h3 {
+    padding-left: 15px;
+}
+
+.icona {
+    height: 40px;
+    margin-left: 20px;
+}

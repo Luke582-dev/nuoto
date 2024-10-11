@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #0056b3; /* Blu scuro per un aspetto professionale */
+    text-align: center;
+    margin-top: 20px; /* Margine ridotto */
+    font-size: 2.5rem; /* Dimensione del titolo più grande */
+}
+
+h3 {
+    color: #0056b3;
+}
+
+.navbar-brand {
+    color: #007bff !important;
+    font-weight: bold;
+  }
+
+p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6; /* Maggiore leggibilità */
+    padding: 0 15px; /* Padding laterale per il testo */
+    margin-top: 0px;
+}
+
+.btn-back {
+    margin-top: 25px; /* Distanza dalla parte superiore */
+    margin-left: 30px; /* Distanza dal lato sinistro */
+    background-color: #000000; /* Colore di sfondo */
+    color: white; /* Colore del testo */
+    border: none; /* Rimuovi bordo */
+}
+
+.navbar-brand {
+    color: #007bff ;
+    font-weight: bold;
+}
+
+.icona {
+    height: 40px;
+    margin-left:20px;
+}
+
+.container {
+    max-width: 1000px; /* Larghezza massima per centrare il contenuto */
+    margin: 0 auto; /* Centra il contenuto */
+    background-color: #ffffff; /* Sfondo bianco per il contenuto */
+    border-radius: 10px; /* Angoli arrotondati */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Ombra per un effetto sollevato */
+    padding: 20px; /* Padding interno */
+}
+
+.button-container {
+    display: flex;               /* Abilita il layout flex */
+    justify-content: center;     /* Allinea gli elementi al centro orizzontalmente */
+    margin-top: 20px;           /* Distanza superiore, facoltativa */
+}
+
+.btn-primary {
+    background-color: #28a745;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 18px;
+}
+
+.btn-primary:hover {
+    background-color: #218838;
+}

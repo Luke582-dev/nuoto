@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #000000;
+  margin-top: 0px;
+  text-align: center;
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: transform 0.2s;
+  cursor: pointer;
+  overflow: hidden;  /* Questo assicura che il contenuto della card non esca dai bordi */
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  border-radius: 10px 10px 0 0;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 10px;  /* Riduce lo spazio tra immagine e testo */
+  background-color: #f0f8ff;
+  text-align: center;
+  border-top: 2px solid #007bff;  /* Linea divisoria colorata tra immagine e testo */
+}
+.navbar-brand {
+  color: #007bff !important;
+  font-weight: bold;
+}
+
+.card-title {
+  margin-top: 5px;
+  font-size: 1.2rem;
+  color: #0056b3;
+}
+
+.card-title:hover {
+  color: #003366;  /* Cambia leggermente il colore del testo al passaggio del mouse */
+}
+
+.input-group {
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.icona {
+  height: 40px;
+  margin-left:20px;
+}
+
+.btn-back {
+  margin-top: 25px; /* Distanza dalla parte superiore */
+  margin-left: 30px; /* Distanza dal lato sinistro */
+  background-color: #000000; /* Colore di sfondo */
+  color: white; /* Colore del testo */
+  border: none; /* Rimuovi bordo */
+}
+
+/* Stile per l'input di ricerca */
+.input-group input.form-control {
+  border-radius: 25px; /* Arrotonda i bordi dell'input */
+}
